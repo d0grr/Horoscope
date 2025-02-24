@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="popup.css"/>
+    <title>Гороскоп на сегодня для всех знаков зодиака</title>
+  </head>
+  <body>
+      <h1 class="title" data-localize="appName"></h1>
+      <div class="burger">
+        <div>
+
+        </div>
+      </div>
+      <div class="menu ">
+        <div class="menu__wrap">
+            <div class="back menuBtn">
+                <img src="./img/ph_house.png" alt="главная">
+                Главная
+            </div>
+            <div class="znak menuBtn">
+                <div class="znak__title">
+                    <img src="./img/date.png" alt="date">
+
+                    Определить свой знак
+                </div>
+                <div class="label">
+                    Введите дату рождения
+                </div>
+                <input min="1900-01-01" max="" class="input" type="date">
+            </div>
+            <div class="yesterday menuBtn">
+                <img src="./img/prev.png" alt="yesterday">
+                Гороскоп на вчера
+            </div>
+            <div class="today menuBtn chose">
+                <img src="./img/now.png" alt="today">
+
+                Гороскоп на сегодня
+            </div>
+            <div class="tomorrow menuBtn">
+                <img src="./img/next.png" alt="tomorrow">
+
+                Гороскоп на завтра
+            </div>
+
+        </div>
+      </div>
+      <div class="wrap">
+        <button class="btn" id="aries" >
+            <img src="./img/aries.png" alt="Овен">
+            <span data-localize="aries"></span>
+        </button>
+        <button class="btn" id="taurus">
+            <img src="./img/taurus.png" alt="Телец"> Телец
+        </button>
+        <button class="btn" id="gemini">
+            <img src="./img/gemini.png" alt="Близнецы"> Близнецы
+        </button>
+        <button class="btn" id="cancer">
+            <img src="./img/cancer.png" alt="Рак"> Рак
+        </button>
+        <button class="btn" id="leo">
+            <img src="./img/leo.png" alt="Лев"> Лев
+        </button>
+        <button class="btn" id="virgo">
+            <img src="./img/virgo.png" alt="Дева"> Дева
+        </button>
+        <button class="btn" id="libra">
+            <img src="./img/libra.png" alt="Весы"> Весы
+        </button>
+        <button class="btn" id="scorpio">
+            <img src="./img/scorpio.png" alt="Скорпион"> Скорпион
+        </button>
+        <button class="btn" id="sagittarius">
+            <img src="./img/sagittarius.png" alt="Стрелец"> Стрелец
+        </button>
+        <button class="btn" id="capricorn">
+            <img src="./img/capricorn.png" alt="Козерог"> Козерог
+        </button>
+        <button class="btn" id="aquarius">
+            <img src="./img/aqua.png" alt="Водолей"> Водолей
+        </button>
+        <button class="btn" id="pisces">
+            <img src="./img/pisces.png" alt="Рыбы"> Рыбы
+        </button>
+        <div class="article">
+            <div class="article__wrap">
+                <div class="article__text">
+
+                </div>
+            </div>
+        </div>
+      </div>
+  </body>
+<script type="module" src="popup.js"></script>
+</html>

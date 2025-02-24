@@ -1,0 +1,50 @@
+{
+  "appName": {
+    "message": "Гороскоп"
+  },
+  "shortDesc": {
+    "message": "Описание"
+  },
+  "storeDesc": {
+    "message": "Длинное описание"
+  },
+  "START": {
+    "message": "Запустить таймер"
+  },
+  "aries": {
+    "message": "Овен"
+  },
+  "taurus": {
+    "message": "Телец"
+  },
+  "gemini": {
+    "message": "Близнецы"
+  },
+  "cancer": {
+    "message": "Рак"
+  },
+  "leo": {
+    "message": "Лев"
+  },
+  "virgo": {
+    "message": "Дева"
+  },
+  "libra": {
+    "message": "Весы"
+  },
+  "scorpio": {
+    "message": "Скорпион"
+  },
+  "sagittarius": {
+    "message": "Стрелец"
+  },
+  "capricorn": {
+    "message": "Козерог"
+  },
+  "aquarius": {
+    "message": "Водолей"
+  },
+  "pisces": {
+    "message": "Рыбы"
+  }
+}
