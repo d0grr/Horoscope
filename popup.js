@@ -8,6 +8,24 @@ import * as i18n from './js/localize.js'
 let day = 'today'
 let find = null
 
+chrome.runtime.onInstalled.addListener((details) =>
+{ if (details.reason === chrome.runtime.OnInstalledReason.INSTALL) {
+// Code to be executed on first install
+// eg. open a tab with a url
+    chrome.tabs.create({
+        url: "https://hrscp.ru/welcome/",
+    });
+} else if (details.reason === chrome.runtime.OnInstalledReason.UPDATE) { // When extension is updated
+} else if ( details.reason === chrome.runtime.OnInstalledReason.CHROME_UPDATE
+) {
+// When browser is updated
+} else if (
+    details.reason === chrome.runtime.OnInstalledReason.SHARED_MODULE_UPDATE
+) {
+// When a shared module is updated
+}
+});
+
 document.addEventListener('DOMContentLoaded', init)
 
 async function init() {
@@ -16,6 +34,7 @@ async function init() {
     } catch (error) {
         console.error('An error occurred:', error)
     }
+    dateDescription.textContent = new Date().toLocaleDateString()
 }
 
 
@@ -56,6 +75,7 @@ const popup = () =>{
     })
 }
 const title = document.querySelector('.title')
+const dateDescription = document.querySelector('.dateDescription')
 const wrap = document.querySelector('.wrap')
 const article = document.querySelector('.article')
 const articleText = document.querySelector('.article__text')

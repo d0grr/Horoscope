@@ -80,6 +80,10 @@ button:hover {
     pointer-events: none;
 }
 
+.dateDescription {
+    font-size: 14px;
+}
+
 .article {
     transition: opacity 0.5s;
     position: absolute;
