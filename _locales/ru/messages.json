@@ -3,13 +3,22 @@
     "message": "Гороскоп"
   },
   "shortDesc": {
-    "message": "Описание"
+    "message": "Описание ввв"
   },
   "storeDesc": {
     "message": "Длинное описание"
   },
-  "START": {
-    "message": "Запустить таймер"
+  "determineSign": {
+    "message": "Определить свой знак"
+  },
+  "selectDateOfBirth": {
+    "message": "Выберите дату рождения"
+  },
+  "horoscopeToday": {
+    "message": "Гороскоп на сегодня"
+  },
+  "horoscopeTomorrow": {
+    "message": "Гороскоп на завтра"
   },
   "aries": {
     "message": "Овен"

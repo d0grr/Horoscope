@@ -185,8 +185,7 @@ button:hover {
 }
 
 .menuBtn.today,
-.menuBtn.tomorrow,
-.menuBtn.yesterday {
+.menuBtn.tomorrow {
     display: none;
 }
 
@@ -234,6 +233,7 @@ button:hover {
 }
 
 .input {
+    font-size: 12px;
     position: absolute;
     width: 100%;
     height: 100%;

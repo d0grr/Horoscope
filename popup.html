@@ -3,7 +3,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" type="text/css" href="popup.css"/>
-    <title>Гороскоп на сегодня для всех знаков зодиака</title>
+    <title data-localize="shortDesc"></title>
   </head>
   <body>
       <h1 class="title" data-localize="appName"></h1>
@@ -15,33 +15,16 @@
       <div class="menu ">
         <div class="menu__wrap">
             <div class="back menuBtn">
-                <img src="./img/ph_house.png" alt="главная">
+                <img src="./img/ph_house.png" alt="main">
                 Главная
-            </div>
-            <div class="znak menuBtn">
-                <div class="znak__title">
-                    <img src="./img/date.png" alt="date">
-
-                    Определить свой знак
-                </div>
-                <div class="label">
-                    Введите дату рождения
-                </div>
-                <input min="1900-01-01" max="" class="input" type="date">
-            </div>
-            <div class="yesterday menuBtn">
-                <img src="./img/prev.png" alt="yesterday">
-                Гороскоп на вчера
             </div>
             <div class="today menuBtn chose">
                 <img src="./img/now.png" alt="today">
-
-                Гороскоп на сегодня
+                <span data-localize="horoscopeToday"></span>
             </div>
             <div class="tomorrow menuBtn">
                 <img src="./img/next.png" alt="tomorrow">
-
-                Гороскоп на завтра
+                <span data-localize="horoscopeTomorrow"></span>
             </div>
 
         </div>

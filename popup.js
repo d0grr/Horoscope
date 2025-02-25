@@ -7,8 +7,6 @@ import * as i18n from './js/localize.js'
 
 let day = 'today'
 let find = null
-const znaks = 
-[ {"name": "aries", "dates": "03-21 - 04-19"}, {"name": "taurus", "dates": "04-20 - 05-20"}, {"name": "gemini", "dates": "05-21 - 06-20"}, {"name": "cancer", "dates": "06-21 - 07-22"}, {"name": "leo", "dates": "07-23 - 08-22"}, {"name": "virgo", "dates": "08-23 - 09-22"}, {"name": "libra", "dates": "09-23 - 10-22"}, {"name": "scorpio", "dates": "10-23 - 11-21"}, {"name": "sagittarius", "dates": "11-22 - 12-21"}, {"name": "capricorn", "dates": "12-22 - 01-19"}, {"name": "aquarius", "dates": "01-20 - 02-18"}, {"name": "pisces", "dates": "02-19 - 03-20"} ]
 
 document.addEventListener('DOMContentLoaded', init)
 
@@ -62,23 +60,11 @@ const wrap = document.querySelector('.wrap')
 const article = document.querySelector('.article')
 const articleText = document.querySelector('.article__text')
 const backBtn = document.querySelector('.back')
-const yesterdayBtn = document.querySelector('.yesterday')
 const tomorrowBtn = document.querySelector('.tomorrow')
 const todayBtn = document.querySelector('.today')
 const burger = document.querySelector('.burger')
 const menu = document.querySelector('.menu')
-const znak = document.querySelector('.znak')
-const input = document.querySelector('.input')
 
-const setMaxDate = () =>{
-    const b = new Date()
-    let m =b.getMonth()+1
-    let d =b.getDate()
-    let y =b.getFullYear()
-    let max = `${y + '-' + (m<10?'0'+m:m) + '-' + (d<10?'0'+d:d)}`
-    input.max=max
-}
-setMaxDate()
 const closeMenu = () =>{
     burger.classList.remove('open')
     menu.classList.remove('active')
@@ -96,31 +82,7 @@ burger.addEventListener('click',(e)=>{
 menu.addEventListener('click',(e)=>{
     e.stopPropagation()
 })
-znak.addEventListener('click',(e)=>{
-    e.stopPropagation()
-    
-})
-input.addEventListener('change',(e)=>{
-    const b = new Date(e.target.value)
-    let t = b.getTime()
-    const y = b.getFullYear()
-    let i = 0 
-    for (let index = 0; index < znaks.length; index++) {
-        const element = znaks[index];
-        let elD = element.dates.split(' - ')
-        elD = elD.map(el=>{
-            const b = new Date(y+'-'+el)
-            return b.getTime()
-        })
 
-        if(t>=elD[0] && t<=elD[1]){
-            i = index
-            break
-        }
-    }
-
-    fetching(znaks[i].name)
-})
 backBtn.addEventListener('click',()=>{
     title.innerHTML = 'Гороскоп'
     article.classList.remove('active')
@@ -141,9 +103,6 @@ const dayBtnClick = (d) =>{
         fetching(find)
     }
 }
-yesterdayBtn.addEventListener('click',()=>{
-    dayBtnClick('yesterday')
-})
 todayBtn.addEventListener('click',()=>{
     dayBtnClick('today')
 })

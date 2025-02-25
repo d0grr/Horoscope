@@ -8,8 +8,17 @@
   "storeDesc": {
     "message": "long description"
   },
-  "START": {
-    "message": "Запустить таймер"
+  "determineSign": {
+    "message": "Determine your zodiac sign"
+  },
+  "selectDateOfBirth": {
+    "message": "Select your date of birth"
+  },
+  "horoscopeToday": {
+    "message": "Today's horoscope"
+  },
+  "horoscopeTomorrow": {
+    "message": "Tomorrow's horoscope"
   },
   "aries": {
     "message": "Aries"
