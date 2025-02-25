@@ -84,7 +84,7 @@ menu.addEventListener('click',(e)=>{
 })
 
 backBtn.addEventListener('click',()=>{
-    title.innerHTML = 'Гороскоп'
+    title.innerHTML = chrome.i18n.getMessage('appName')
     article.classList.remove('active')
     articleText.innerHTML=''
     menu.classList.remove('find')
@@ -154,7 +154,7 @@ const fetchFunc = async(url,id,cl,last) =>{
         if(last){
             // alert('Ошибка:( Попробуйте позже')
             article.classList.add('active')
-            articleText.innerHTML = '<div class="article__err">Ошибка:( Попробуйте позже</div>'
+            articleText.innerHTML = '<div class="article__err">'+chrome.i18n.getMessage('error')+'</div>'
         }
 
     }

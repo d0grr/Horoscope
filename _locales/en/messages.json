@@ -55,5 +55,8 @@
   },
   "pisces": {
     "message": "Pisces"
+  },
+  "error": {
+    "message": "Error :( Try again later"
   }
 }
